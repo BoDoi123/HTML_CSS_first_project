@@ -12,6 +12,8 @@ body {
     --font_regularly: "Poppins", sans-serif;
     --font_header: "Sen", sans-serif;
     font-family: var(--font_regularly);
+
+    margin: 0 135px;
 }
 
 /* Common (Phần dùng chung) */
