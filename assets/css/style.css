@@ -510,21 +510,25 @@ a {
 
 /* =====================> Feedback <==================== */
 .feedback {
-    height: 380px;
+    width: 100%;
     background: #2e2100;
 
     margin-top: 135px;
 }
 
+.feedback .feedback-list {
+    display: flex;
+
+    overflow: hidden;
+}
+
 .feedback .feedback-item {
+    width: 100%;
+
     padding: 96px 0;
 
     display: flex;
-    justify-content: space-between;
-}
-
-.feedback-item .info {
-    width: 33%;
+    flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -579,10 +583,12 @@ a {
 }
 
 .feedback-item .content {
-    width: 67%;
+    width: 66%;
+
+    margin-left: auto;
 }
 
-.feedback-item .content blockquote {    
+.feedback-item .content blockquote {
     color: #fff;
     font-size: 2.6rem;
     font-style: italic;
