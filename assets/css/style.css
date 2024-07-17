@@ -22,6 +22,7 @@ body {
 /* ======================> Common (Phần dùng chung) <========================= */
 a {
     text-decoration: none;
+    color: blue;
 }
 
 .main-content {
@@ -719,8 +720,7 @@ a {
 }
 
 .blog-list .item {
-    width: 370px;
-    height: 467px;
+    width: calc(33.33% - 20px);
 
     border-radius: 16px;
     background: #fff;
@@ -733,7 +733,7 @@ a {
 }
 
 .blog-list .image .thumb {
-    width: 370px;
+    width: 100%;
     height: 250px;
 
     object-fit: cover;
@@ -830,4 +830,97 @@ a {
     background: var(--button_color);
 
     cursor: default;
+}
+
+/* ======================> Footer <====================== */
+.footer {
+    padding: 96px 0 0;
+
+    background: #2e2100;
+}
+
+.footer .row {
+    display: flex;
+
+    border-bottom: 1px solid #59554b;
+
+    padding-bottom: 38px;
+}
+
+.footer .row .column:first-child {
+    width: 35%;
+}
+
+.footer .desc {
+    max-width: 267px;
+
+    margin-top: 18px;
+
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
+
+.footer .socials {
+    margin-top: 18px;
+
+    display: flex;
+    gap: 18px;
+}
+
+.footer .column {
+    width: 21.6%;
+}
+
+.footer .column .title {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+
+    border-bottom: 1px solid #59554b;
+
+    padding-bottom: 14px;
+    padding-right: 48px;
+
+    display: inline-block;
+}
+
+.footer .list {
+    margin-top: 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer .list a {
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
+
+.footer .list strong {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86; /* 185.714% */
+}
+
+.footer .copy-right {
+    padding: 28px 0;
+
+    color: #807d74;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer .copy-right .desc {
+    max-width: 357px;
+    
+    margin-top: 0;
 }
