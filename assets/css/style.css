@@ -651,6 +651,9 @@ a {
     height: 50px;
 
     border-radius: 26px;
+}
+
+.features .content .btn-features:hover {
     background: #ffb900;
 }
 
